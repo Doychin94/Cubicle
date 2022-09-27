@@ -1,0 +1,21 @@
+
+      <div id="container">
+      <h1>Browser</h1>
+      <form action="" method="">
+        <input type="text" class="search" name="search" placeholder="Search...">
+        <input type="number" name="from" class="difficulty" placeholder="Difficulty from...">
+        <span>-</span>
+        <input type="number" name="to" class="difficulty" placeholder="Difficulty to...">
+        <input type="submit" value="search">
+      </form>
+      <div class="cube">
+       {{#each cubes}}
+        <img class="cube" src="{{img}}">
+        <p class="name">{{name}}</p>
+        <p><span>Difficulty level:</span>{{dificulty}}</p>
+        <a class="btn" href="/details/{{id}}">Details</a>
+        {{/each}}
+        
+      </div>
+      </div>
+     
